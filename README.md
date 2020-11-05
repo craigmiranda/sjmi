@@ -39,13 +39,13 @@ Requirements:
 
 Testing:
 
-* Minimal (in progress,as at Nov2020)
-* Four seperate Windows 10 machines w/ integrated cameras (Dell, Acer & Laptop) 
-* One external USB2.0 Microscope camera
+* Minimal (in progress, as at Nov2020)
+* Success with CamTest demonstration app on four seperate Windows 10 machines w/ integrated cameras 
+* Success with one external USB2.0 microscope camera
 
 Notes:
 
-(1) Currently image capture is taken from the conventionaly video stream. Some devices, apparently, have "still pin" functionality, but none of seem to.
+(1) Currently image capture is taken from the conventional video stream. Some devices, apparently, have "still pin" functionality, but none of mine seem to have this.
 
 (2) Windows, for some reason, has at least four methods for video capture. 
  - DirectShow
@@ -53,7 +53,7 @@ Notes:
  - IMFCaptureEngine (mfcaptureengine.h; overlaps with IMFSourceReader methods; https://docs.microsoft.com/en-us/windows/win32/api/mfcaptureengine/nn-mfcaptureengine-imfcaptureengine)
  - Windows.Media.Devices (https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Devices?redirectedfrom=MSDN&view=winrt-19041)
   
-  The SJMI sub-library uses the what I'd call the IMFSourceReader method
+  The SJMI sub-library uses the what I'd call the "IMFSourceReader" method, but there is also half an implementation of the "IMFCaptureEngine", written to test devices with still/photo functionality.
 
 (3) I personally, currently have no use for these features, so don't count on them appearing soon by my hand. Though, I don't believe they would be a huge effort.
 
