@@ -40,7 +40,7 @@ Requirements:
 Testing:
 
 * Minimal (in progress,as at Nov2020)
-* Four seperate Windows 10 machines w/ integrated cameras (Dell, Acer & Laptop) 
+* Four seperate Windows 10 machines w/ integrated cameras
 * One external USB2.0 Microscope camera
 
 Notes:
