@@ -1,4 +1,4 @@
-# sjmi
+# SJMI
 Skinny Java Media Interface - a Java interface for Video Devices
 
 SJMI is a Java library which allows Java to access Video Devices ("web cams" and suchlike) attached to the system. It has been designed to provide basic functionality and ease of use. It weighs under 100kb, give or take (excluding the JVM and VC++ runtimes).
