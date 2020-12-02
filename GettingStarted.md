@@ -1,8 +1,10 @@
 # Getting Started
 
-You might first like to see if it work - I'm curious - in which case, run the example.
+You might first like to see if it works - I'm curious - in which case, run the example.
 
-Run example
+CamTest 
+
+The example application returns all the available devices and resolutions. It also shows a live feed, with selectable input.
 
 * Download ZIP and unzip directory
 * run compiled executable '<SJMI_DIRECTORY>\camtest_example\distributable\exe\CamTest.exe'
@@ -11,6 +13,7 @@ Run example
   (the Djava.library.path must include 'sjmi_win_lib.dll')
 * OR run Windows installer '<SJMI_DIRECTORY>\camtest_example\distributable\setup\RbCamTestSetup.exe'
  (the installer includes the VC++15-19 runtime installation)
+ 
  
 All being well, you can have a poke around in the code. The library has two components, the Java bit and the C++ bit. (JNI joins them up.)
 
