@@ -29,15 +29,15 @@ Java bit
 * You should have two packages
   * CamTest: this is a simple implementation of the library consisting of just CamTest.java
   * com.rockenbrew.SJMI: this is the java half of the library
-* Right click 'CamTest' package in the Package Explorer, Build Path > Configure Build Path 
+* Configure CamTest build path (Right click 'CamTest' package in the Package Explorer, Build Path > Configure Build Path)
   * Libraries tab: Ensure smji.jar appears. If not, Add Jar... > from '<SJMI_DIRECTORY>/java/dist/sjmi.jar'
   * Source tab: Native library location select '<SJMI_DIRECTORY>/java/lib'
 * Run CamTest
-* Right click 'com.rockenbrew.SJMI' in the Package Explorer, Build Path > Configure Build Path 
-  * Source tab: Native library location select '<SJMI_DIRECTORY>/java/lib'
+* Configure com.rockenbrew.SJMI build path (as above)
+ * Source tab: Native library location select '<SJMI_DIRECTORY>/java/lib'
 * To create the Jar, either  
   * File > Export, Java > Jar File, ...
-  * Create a manfiest file to create the Jar (find mine, for example, sjmi_build_manfiest_win.xml)
+  * Create a build manfiest for the Jar build (find mine, for example, sjmi_build_manfiest_win.xml)
 
  C++ bit
  
