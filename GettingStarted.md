@@ -9,8 +9,11 @@ The example application returns all the available devices and resolutions. It al
 * Download ZIP and unzip directory
 * run compiled executable '<SJMI_DIRECTORY>\camtest_example\distributable\exe\CamTest.exe'
 * OR From command prompt, run:
+
   'java -jar -Djava.library.path=<SJMI_DIRECTORY>\camtest_example\distributable\jar\ <SJMI_DIRECTORY>\camtest_example\distributable\jar\CamTest.jar'
-  (the Djava.library.path must include 'sjmi_win_lib.dll')
+
+(the Djava.library.path must include 'sjmi_win_lib.dll')
+
 * OR run Windows installer '<SJMI_DIRECTORY>\camtest_example\distributable\setup\RbCamTestSetup.exe'
  (the installer includes the VC++15-19 runtime installation)
  
