@@ -15,6 +15,7 @@ Functionality:
 Pending functionality:
 
 * Mac & Linux sub-libraries
+* JavaDoc
 * Video formats NV12 & MPG
 * "Still pin" image/photo capture (1, see below)
 * USB3.0 devices
@@ -39,7 +40,7 @@ Requirements:
 
 Testing:
 
-* Minimal (in progress,as at Nov2020)
+* Minimal (in progress, as at Nov2020)
 * Four seperate Windows 10 machines w/ integrated cameras
 * One external USB2.0 Microscope camera
 
