@@ -8,8 +8,10 @@ Run example
 * run compiled executable '<SJMI_DIRECTORY>\camtest_example\distributable\exe\CamTest.exe'
 * OR From command prompt, run:
   'java -jar -Djava.library.path=<SJMI_DIRECTORY>\camtest_example\distributable\jar\ <SJMI_DIRECTORY>\camtest_example\distributable\jar\CamTest.jar'
+  (the Djava.library.path must include 'sjmi_win_lib.dll')
 * OR run Windows installer '<SJMI_DIRECTORY>\camtest_example\distributable\setup\RbCamTestSetup.exe'
-
+ (the installer includes the VC++15-19 runtime installation)
+ 
 All being well, you can have a poke around in the code. The library has two components, the Java bit and the C++ bit. (JNI joins them up.)
 
 Java bit
