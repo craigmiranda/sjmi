@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project default="create_sjmi_jar" name="Create Runnable Jar for SJMI" basedir=".">
+
+	<description>
+		SkinnyJavaMediaInterface Jar Builder
+	</description>
+
+	<property name="dir.src" value="src" />
+	<property name="dir.bin" value="./bin" />
+	<property name="dir.build" value="./dist" />
+	<property name="dir.lib" value="./lib" />
+
+	<target name="clean" description="build">
+	    <delete dir="${dir.build}" />
+	    <mkdir dir="${dir.build}" />
+
+		<delete dir="C:\Users\craig\eclipse-workspace2\CamTestJMedia\lib" />
+	    <mkdir dir="C:\Users\craig\eclipse-workspace2\CamTestJMedia\lib" />
+	  </target>
+	
+	<target name="create_sjmi_jar" depends="clean">
+
+		<javac srcdir="src" destdir="${dir.bin}" includeantruntime="false"/>
+		
+    	<jar jarfile="C:\Users\craig\eclipse-workspace2\CamTestJMedia\lib\sjmi.jar">
+		<manifest>
+			<attribute name="Main-Class" value="com.rockenbrew.JavaWMF.SJMI" />
+    	    <attribute name="Class-Path" value="sjmi.jar" />
+		</manifest>
+    		
+		<fileset dir="${dir.bin}"/>
+    		
+    	</jar>
+
+    	<jar jarfile="${dir.build}/sjmi.jar">
+		<manifest>
+			<attribute name="Main-Class" value="com.rockenbrew.JavaWMF.SJMI" />
+			<attribute name="Class-Path" value="sjmi.jar" />
+		</manifest>
+    		
+		<fileset dir="${dir.bin}"/>
+    		
+    	</jar>
+
+
+
+
+    </target>
+
+</project>
