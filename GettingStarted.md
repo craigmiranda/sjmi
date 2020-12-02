@@ -27,7 +27,7 @@ Java bit
 * Download ZIP and unzip directory
 * (Eclipse) File > Open Projects From File System...
 * You should have two packages
-  * 'CamTest': this is a simple implementation of the library consisting of just CamTest.java
+  * CamTest: this is a simple implementation of the library consisting of just CamTest.java
   * com.rockenbrew.SJMI: this is the java half of the library
 * Right click 'CamTest' package in the Package Explorer, Build Path > Configure Build Path 
   * Libraries tab: Ensure smji.jar appears. If not, Add Jar... > from '<SJMI_DIRECTORY>/java/dist/sjmi.jar'
