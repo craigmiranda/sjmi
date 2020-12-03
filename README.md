@@ -1,16 +1,16 @@
 # SJMI
 Skinny Java Media Interface - a Java interface for Video Devices
 
-SJMI is a Java library which allows Java to access Video Devices ("web cams" and suchlike) attached to the system. It has been designed to provide basic functionality and ease of use. It weighs under 100kb, give or take (excluding the JVM and VC++ runtimes).
+SJMI is a Java library which allows Java to access Video Devices ("webcams" and suchlike) attached to the system. It has been designed to provide basic functionality and ease of use. It weighs under 100kb, give or take (excluding the JVM and VC++ runtimes).
 
 Functionality:
 
 * Identify video devices & properties thereof
 * Select video device & set video format (resolution, etc)
-* Stream and capture images (to Java BufferedImage(s))
+* Stream and capture to Java BufferedImage(s)
 * Adjust brightness, white balance, focus, etc. (where available)
 * Video Format support for RGB24 & YUY2
-  * Overridable functions to implement new video formats (NV12, MPG)
+  * Overridable functions to implement new video formats (ie. NV12, MPG)
 
 Pending functionality:
 
@@ -44,6 +44,11 @@ Testing:
 * Minimal (in progress, as at Nov2020)
 * Four seperate Windows 10 machines w/ integrated cameras
 * One external USB2.0 Microscope camera
+
+Alternatives:
+
+* https://github.com/sarxos/webcam-capture - I liked this one. Nice and simple, but it (using OpenImaj) didn't pick up a particular USB2.0 camera that I needed (and which was picked up by the Win10 Camera app.) I still don't understand what the problem was there. And, To be honest, whether this solution resolves that problem remains to be proved.
+* https://github.com/gstreamer-java - Lots of functionality, but more than I needed or wanted. I struggled to deploy it for simple video capture, with less than 40mb of dependencies.
 
 Notes:
 
