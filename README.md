@@ -29,13 +29,14 @@ Misc:
 
 * SJMI sub-library written in C++ accessed via JNI
   - hence depends on the VC++ 2015-2019 Redistributables
-* SJMI sub-library depends on shared sub-sub-libraries, part of the Microsoft Media Foundation ("MMF") (3)
+* SJMI sub-library depends on shared "sub-sub-libraries", part of the Microsoft Media Foundation ("MMF") (3)
 * It includes half an implementation of MMF CaptureEngine for still/photo capture (3)
 
 Requirements:
 
 * 64-bit machine (4)
 * Windows 10 (probably Windows 8, maybe Win7)
+* JRE 1.8 (prior JRE's untested)
 * VC++ 2015-2019 Redistributables (https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) (5)
 
 Testing:
@@ -46,7 +47,7 @@ Testing:
 
 Notes:
 
-(1) Currently image capture is taken from the conventionaly video stream. Some devices, apparently, have "still pin" functionality, but none of seem to.
+(1) Currently image capture is taken from the conventional video stream. Some devices, apparently, have "still pin" functionality, but none of mine seem to.
 
 (2) Windows, for some reason, has at least four methods for video capture. 
  - DirectShow
